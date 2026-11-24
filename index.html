@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10251f">
+<title>ScrapMob — Dead Motherboard Scrap</title>
+<style>
+:root{--bg:#f4f7f5;--ink:#14231d;--muted:#64736c;--green:#157a50;--lime:#c7f36b;--card:#fff;--line:#e1e9e4}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,system-ui,Arial,sans-serif}
+header{background:#10251f;color:#fff;padding:16px max(5vw,20px);display:flex;align-items:center;justify-content:space-between;gap:16px;position:sticky;top:0;z-index:5}
+.logo{font-size:24px;font-weight:850;letter-spacing:-1px}.logo span{color:var(--lime)}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:#e8f1eb;text-decoration:none;font-size:14px}
+.hero{background:radial-gradient(circle at 80% 15%,#286448 0,transparent 32%),linear-gradient(120deg,#10251f,#173b2c);color:white;padding:64px max(5vw,20px) 58px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.eyebrow{color:var(--lime);font-weight:750;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}.hero h1{font-size:clamp(36px,5vw,58px);line-height:1.04;letter-spacing:-2px;margin:14px 0}.hero p{color:#d0ddd5;max-width:590px;font-size:17px}.hero-card{background:#ffffff12;border:1px solid #ffffff2b;border-radius:22px;padding:25px}.chip{display:inline-block;background:#d9f7b1;color:#173b2c;padding:7px 12px;border-radius:99px;font-size:12px;font-weight:800}
+.btn{border:0;border-radius:11px;padding:12px 17px;background:var(--green);color:#fff;font-weight:750;cursor:pointer;text-decoration:none;display:inline-block}.btn.alt{background:var(--lime);color:#183526}.btn.dark{background:#183526}.btn.outline{background:white;color:var(--green);border:1px solid var(--line)}
+main{max-width:1120px;margin:auto;padding:36px 20px 70px}.section-head{margin-bottom:18px}.section-head h2{font-size:28px;margin:0 0 5px;letter-spacing:-.7px}.section-head p,.muted{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 8px 28px #163b2610}.card h3{margin:0 0 6px;font-size:19px}.field{display:flex;flex-direction:column;gap:6px;margin:13px 0}.field label{font-size:13px;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid #d7e1da;border-radius:10px;padding:12px;background:#fff;font:inherit;color:var(--ink)}.field textarea{min-height:82px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pricebox{background:#eff8e8;border:1px solid #d7edc6;border-radius:13px;padding:14px;margin:14px 0}.pricebox strong{font-size:24px;color:#17613f}.small{font-size:12px;color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}.stat{background:#ffffff12;border-radius:13px;padding:14px}.stat b{display:block;font-size:22px;color:var(--lime)}.how{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.step{padding:18px;border:1px solid var(--line);background:white;border-radius:15px}.step b{display:block;font-size:18px;margin-bottom:4px}.notice{padding:12px 14px;background:#fff8df;border:1px solid #f0e3b4;border-radius:11px;color:#65531e;font-size:13px;margin:14px 0}
+footer{background:#10251f;color:#d0ddd5;padding:28px max(5vw,20px);font-size:13px}.admin{margin-top:30px}.hidden{display:none!important}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--muted)}.tag{background:#e9f5ed;color:#17613f;padding:4px 8px;border-radius:30px;font-size:11px;font-weight:700}
+@media(max-width:760px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{grid-template-columns:1fr;padding-top:42px}.grid{grid-template-columns:1fr}.how{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}main{padding-top:27px}.row{grid-template-columns:1fr}}
+</style>
+<script src="config.js"></script>
+</head>
+<body>
+<header><div class="logo">Scrap<span>Mob</span></div><nav><a href="#price">Check Price</a><a href="#sell">Sell Motherboard</a><a href="#how">How It Works</a><a href="#admin">Admin</a></nav></header>
+<section class="hero">
+ <div><span class="chip">PAN-INDIA DEAD MOTHERBOARD BUYING</span><h1>Turn dead boards<br>into value.</h1><p>Get an estimated scrap price and send your dead mobile motherboard selling request directly to ScrapMob. Bulk lots welcome.</p><a class="btn alt" href="#price">Check Scrap Price</a> <a class="btn" href="#sell">Sell Motherboards</a>
+ <div class="stats"><div class="stat"><b>All India</b><span class="small" style="color:#d0ddd5">Seller requests</span></div><div class="stat"><b>Bulk</b><span class="small" style="color:#d0ddd5">Lots accepted</span></div><div class="stat"><b>Direct</b><span class="small" style="color:#d0ddd5">Buyer contact</span></div></div></div>
+ <div class="hero-card"><div class="eyebrow">What we buy</div><h2>Dead mobile motherboards only</h2><p>Samsung · Vivo · OPPO · Xiaomi · Redmi · Realme · OnePlus · iPhone · Other</p><hr style="border-color:#ffffff30"><p class="small" style="color:#d0ddd5">Final purchase price is confirmed only after photo review and physical inspection.</p></div>
+</section>
+<main>
+<section id="price">
+ <div class="section-head"><h2>Check estimated scrap price</h2><p>Choose the board details to view the indicative rate set by ScrapMob.</p></div>
+ <div class="card">
+  <div class="row"><div class="field"><label>Brand</label><select id="brand"><option>Samsung</option><option>Vivo</option><option>OPPO</option><option>Xiaomi</option><option>Redmi</option><option>Realme</option><option>OnePlus</option><option>iPhone</option><option>Other</option></select></div>
+  <div class="field"><label>Storage on board</label><select id="storage"><option>32GB</option><option>64GB</option><option>128GB</option><option>256GB</option><option>Unknown</option></select></div></div>
+  <div class="row"><div class="field"><label>Model (optional)</label><input id="model" placeholder="e.g. Redmi Note 10"></div><div class="field"><label>Quantity (pieces)</label><input id="qty" type="number" min="1" value="1"></div></div>
+  <button class="btn" onclick="checkPrice()">Check price</button>
+  <div class="pricebox" id="priceResult"><span class="muted">Your estimated price will appear here.</span></div>
+  <p class="small">Rates are sample placeholders until the admin enters real buying rates. Final rate depends on board condition, chip presence, model and inspection.</p>
+ </div>
+</section>
+<section id="sell" style="margin-top:42px">
+ <div class="section-head"><h2>Sell your dead motherboards</h2><p>Share your details and our buying team can review your lot.</p></div>
+ <div class="grid">
+  <div class="card"><h3>Seller request form</h3>
+   <form id="sellForm">
+    <div class="row"><div class="field"><label>Your name *</label><input id="sellerName" required placeholder="Full name"></div><div class="field"><label>Mobile / WhatsApp *</label><input id="phone" required inputmode="tel" placeholder="10-digit mobile number"></div></div>
+    <div class="row"><div class="field"><label>State *</label><input id="state" required placeholder="State"></div><div class="field"><label>City *</label><input id="city" required placeholder="City"></div></div>
+    <div class="row"><div class="field"><label>Brand / mixed lot *</label><select id="sellBrand"><option>Mixed brands</option><option>Samsung</option><option>Vivo</option><option>OPPO</option><option>Xiaomi / Redmi</option><option>Realme</option><option>OnePlus</option><option>iPhone</option><option>Other</option></select></div><div class="field"><label>Storage mix</label><select id="sellStorage"><option>Mixed / Unknown</option><option>32GB</option><option>64GB</option><option>128GB</option><option>256GB</option></select></div></div>
+    <div class="row"><div class="field"><label>Quantity (pieces) *</label><input id="sellQty" type="number" min="1" required placeholder="e.g. 500"></div><div class="field"><label>Expected price per piece (₹, optional)</label><input id="expected" type="number" min="0" placeholder="Your expectation"></div></div>
+    <div class="field"><label>Board details / chip details</label><textarea id="details" placeholder="Dead boards? CPU/RAM/ROM IC intact? Any mixed condition?"></textarea></div>
+    <div class="field"><label>Photo link (optional)</label><input id="photo" type="url" placeholder="Paste a Google Drive photo link"></div>
+    <div class="notice">Do not send loose ICs, stolen devices or boards without legal ownership. Photos and physical inspection are required before a final offer.</div>
+    <button class="btn" type="submit">Submit request & open WhatsApp</button>
+   </form>
+  </div>
+  <div class="card"><h3>What happens next?</h3><div class="how" style="grid-template-columns:1fr"><div class="step"><b>01 · Submit details</b><span class="muted">Tell us your quantity, location and board mix.</span></div><div class="step"><b>02 · Photo review</b><span class="muted">ScrapMob reviews photos and shares an indicative offer.</span></div><div class="step"><b>03 · Inspection & deal</b><span class="muted">Final rate and pickup/shipping terms are agreed after inspection.</span></div></div><p class="small" style="margin-top:15px">Submitting a request does not guarantee acceptance or a fixed price.</p></div>
+ </div>
+</section>
+<section id="how" style="margin-top:42px"><div class="section-head"><h2>Simple, transparent process</h2><p>Built for dead mobile motherboard sellers and bulk scrap lots.</p></div><div class="how"><div class="step"><b>Check rate</b><span class="muted">View the current indicative rate entered by our admin.</span></div><div class="step"><b>Send lot details</b><span class="muted">Submit seller, quantity, location and photo information.</span></div><div class="step"><b>Get reviewed</b><span class="muted">Discuss inspection, final price and logistics directly.</span></div></div></section>
+<section id="admin" class="admin"><div class="section-head"><h2>Admin dashboard</h2><p>Demo dashboard for this browser. Set your buying rates and review locally saved test requests.</p></div>
+ <div class="card"><div class="notice">Demo mode: data is saved only in this browser. It is not a secure online admin system and requests from other devices will not appear here until a real backend is connected.</div>
+ <h3>Update indicative rates (₹ per piece)</h3><div class="row"><div class="field"><label>Brand</label><select id="rateBrand"><option>Samsung</option><option>Vivo</option><option>OPPO</option><option>Xiaomi</option><option>Redmi</option><option>Realme</option><option>OnePlus</option><option>iPhone</option><option>Other</option></select></div><div class="field"><label>Storage</label><select id="rateStorage"><option>32GB</option><option>64GB</option><option>128GB</option><option>256GB</option><option>Unknown</option></select></div></div>
+ <div class="row"><div class="field"><label>Rate ₹</label><input id="rateValue" type="number" min="0" placeholder="Enter rate"></div><div class="field" style="justify-content:end"><button class="btn dark" onclick="saveRate()">Save rate</button></div></div>
+ <h3 style="margin-top:22px">Saved seller requests</h3><div class="tablewrap"><table><thead><tr><th>Name</th><th>Phone</th><th>Location</th><th>Brand</th><th>Qty</th><th>Status</th></tr></thead><tbody id="requestsTable"><tr><td colspan="6" class="muted">No requests in this browser yet.</td></tr></tbody></table></div>
+ <button class="btn outline" style="margin-top:14px" onclick="exportRequests()">Export requests CSV</button>
+ </div></section>
+</main>
+<footer><b>ScrapMob</b><br>Dead mobile motherboard scrap buying · India<br><span>Indicative rates only. Final price subject to inspection, chip verification and agreed logistics.</span></footer>
+<script>
+const CONFIG_WHATSAPP = window.SCRAPMOB_WHATSAPP || '91XXXXXXXXXX';
+const DEFAULT_RATES={};
+const rates=JSON.parse(localStorage.getItem('sm_rates')||'null')||DEFAULT_RATES;
+let lastQuote=null;
+function key(b,s){return b+'|'+s}
+function money(n){return '₹'+Number(n).toLocaleString('en-IN',{maximumFractionDigits:2})}
+function checkPrice(){
+ const b=document.getElementById('brand').value,s=document.getElementById('storage').value,q=Math.max(1,Number(document.getElementById('qty').value)||1);
+ const r=rates[key(b,s)] ?? rates[key(b,'Unknown')];
+ lastQuote={brand:b,storage:s,qty:q,rate:r};
+ const el=document.getElementById('priceResult');
+ el.innerHTML=r===undefined?'<span class="muted">Rate not available yet. Please submit a selling request for a quotation.</span>':'<span class="small">Indicative rate per piece</span><br><strong>'+money(r)+'</strong><br><span class="muted">Estimated lot value for '+q+' pcs: <b>'+money(r*q)+'</b></span>';
+}
+function saveRate(){
+ const b=document.getElementById('rateBrand').value,s=document.getElementById('rateStorage').value,v=document.getElementById('rateValue').value;
+ if(v===''||Number(v)<0){alert('Enter a valid rate');return}
+ rates[key(b,s)]=Number(v);localStorage.setItem('sm_rates',JSON.stringify(rates));alert('Rate saved in this browser');checkPrice();
+}
+function getRequests(){return JSON.parse(localStorage.getItem('sm_requests')||'[]')}
+function renderRequests(){
+ const data=getRequests(),tb=document.getElementById('requestsTable');
+ if(!data.length){tb.innerHTML='<tr><td colspan="6" class="muted">No requests in this browser yet.</td></tr>';return}
+ tb.innerHTML=data.map(x=>'<tr><td>'+esc(x.name)+'</td><td>'+esc(x.phone)+'</td><td>'+esc(x.city+', '+x.state)+'</td><td>'+esc(x.brand)+'</td><td>'+esc(x.qty)+'</td><td><span class="tag">Pending</span></td></tr>').join('');
+}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+document.getElementById('sellForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const x={name:sellerName.value.trim(),phone:phone.value.trim(),state:state.value.trim(),city:city.value.trim(),brand:sellBrand.value,storage:sellStorage.value,qty:sellQty.value,expected:expected.value,details:details.value,photo:photo.value,date:new Date().toISOString()};
+ if(!/^[0-9+\s()-]{8,18}$/.test(x.phone)){alert('Please enter a valid phone number');return}
+ const all=getRequests();all.unshift(x);localStorage.setItem('sm_requests',JSON.stringify(all));renderRequests();
+ const msg=`ScrapMob motherboard selling request%0AName: ${encodeURIComponent(x.name)}%0APhone: ${encodeURIComponent(x.phone)}%0ALocation: ${encodeURIComponent(x.city+', '+x.state)}%0ABrand: ${encodeURIComponent(x.brand)}%0AStorage: ${encodeURIComponent(x.storage)}%0AQuantity: ${encodeURIComponent(x.qty)} pcs%0AExpected rate: ${encodeURIComponent(x.expected||'Not specified')}%0ADetails: ${encodeURIComponent(x.details||'Not specified')}%0APhoto link: ${encodeURIComponent(x.photo||'Not provided')}`;
+ const wa=CONFIG_WHATSAPP;
+ if(wa==='91XXXXXXXXXX'){alert('Demo request saved in this browser. Set your WhatsApp number in config.js before using WhatsApp submissions.');return}
+ window.open(`https://wa.me/${wa}?text=${msg}`,'_blank');
+ alert('Request saved in this browser. WhatsApp will open to send the request.');
+ e.target.reset();
+});
+function exportRequests(){
+ const rows=getRequests();if(!rows.length){alert('No requests to export');return}
+ const cols=['name','phone','state','city','brand','storage','qty','expected','details','photo','date'];
+ const csv=[cols.join(','),...rows.map(r=>cols.map(c=>'"'+String(r[c]??'').replace(/"/g,'""')+'"').join(','))].join('\n');
+ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='scrapmob-requests.csv';a.click();URL.revokeObjectURL(a.href);
+}
+renderRequests();
+</script>
+</body></html>
